@@ -1,6 +1,5 @@
-if [ -d "Ordinario_Jenkins" ]; then
+#!/bin/bash
 rm -R Ordinario_Jenkins
-fi
 
 docker stop $(docker ps -aq)
 docker rm $(docker ps -aq)
