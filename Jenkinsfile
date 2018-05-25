@@ -2,12 +2,7 @@ pipeline {
   agent any
   stages {
     stage('Conf Init') {
-      agent {
-        node {
-          label 'SlaveFinal'
-        }
-        
-      }
+      agent any
       steps {
         sh '''if [ -d "Ordinario_Jenkins" ]; then
 rm -R Ordinario_Jenkins
