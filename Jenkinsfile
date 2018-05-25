@@ -8,7 +8,6 @@ pipeline {
 rm -R Ordinario_Jenkins
 fi'''
         sh 'docker stop ordinario'
-        sh 'docker rm -f ordinario'
       }
     }
     stage('Container') {
