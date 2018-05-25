@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('Conf Init') {
       steps {
-        sh 'clean.sh'
+        sh '''
+./clean.sh'''
       }
     }
     stage('Git') {
