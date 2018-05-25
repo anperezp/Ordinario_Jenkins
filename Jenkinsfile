@@ -1,5 +1,10 @@
 pipeline {
-  agent any
+  agent {
+    node {
+      label 'SlaveFinal'
+    }
+    
+  }
   stages {
     stage('Conf Init') {
       steps {
