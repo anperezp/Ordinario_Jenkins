@@ -10,7 +10,7 @@ fi'''
     }
     stage('Git') {
       steps {
-        sh 'apt-get -y install git && rm -Rf hello-html'
+         sh 'apt-get -y install git && rm -Rf hello-html'
         sh 'git clone https://github.com/anperezp/hello-html.git'
       }
     }
