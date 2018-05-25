@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Conf Init') {
       steps {
-        sh 'sudo ./clean.sh'
+        sh 'clean.sh'
       }
     }
     stage('Git') {
