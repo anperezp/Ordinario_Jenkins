@@ -6,6 +6,7 @@ pipeline {
         sh '''if [ -d "Ordinario_Jenkins" ]; then
 rm -R Ordinario_Jenkins
 fi'''
+        sh 'docker rmi guiraofan'
       }
     }
     stage('Container') {
