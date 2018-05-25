@@ -1,0 +1,25 @@
+may 25, 2018 1:42:34 PM hudson.remoting.jnlp.Main createEngine
+INFORMACIÓN: Setting up agent: SlaveNode
+may 25, 2018 1:42:34 PM hudson.remoting.jnlp.Main$CuiListener <init>
+INFORMACIÓN: Jenkins agent is running in headless mode.
+may 25, 2018 1:42:34 PM org.jenkinsci.remoting.engine.WorkDirManager initializeWorkDir
+INFORMACIÓN: Using /home/ana/Docker/Ordinario_Jenkins/remoting as a remoting work directory
+may 25, 2018 1:42:34 PM hudson.remoting.jnlp.Main$CuiListener status
+INFORMACIÓN: Locating server among [http://localhost:8080/]
+may 25, 2018 1:42:34 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+INFORMACIÓN: Remoting server accepts the following protocols: [JNLP4-connect, Ping]
+may 25, 2018 1:42:34 PM hudson.remoting.jnlp.Main$CuiListener status
+INFORMACIÓN: Agent discovery successful
+  Agent address: localhost
+  Agent port:    50000
+  Identity:      b9:7d:92:88:66:ee:e8:17:88:7d:30:d6:02:2c:62:e3
+may 25, 2018 1:42:34 PM hudson.remoting.jnlp.Main$CuiListener status
+INFORMACIÓN: Handshaking
+may 25, 2018 1:42:34 PM hudson.remoting.jnlp.Main$CuiListener status
+INFORMACIÓN: Connecting to localhost:50000
+may 25, 2018 1:42:34 PM hudson.remoting.jnlp.Main$CuiListener status
+INFORMACIÓN: Trying protocol: JNLP4-connect
+may 25, 2018 1:42:34 PM hudson.remoting.jnlp.Main$CuiListener status
+INFORMACIÓN: Remote identity confirmed: b9:7d:92:88:66:ee:e8:17:88:7d:30:d6:02:2c:62:e3
+may 25, 2018 1:42:35 PM hudson.remoting.jnlp.Main$CuiListener status
+INFORMACIÓN: Connected
