@@ -6,7 +6,7 @@ pipeline {
         sh '''if [ -d "Ordinario_Jenkins" ]; then
 rm -R Ordinario_Jenkins
 fi'''
-        sh 'sudo docker stop ordinario'
+        sh 'docker stop ordinario'
         sh 'docker rm -f ordinario'
       }
     }
