@@ -10,7 +10,7 @@ fi'''
     }
     stage('Git') {
       steps {
-         sh 'apt-get -y install git'
+        sh 'apt-get -y install git'
         sh 'git clone https://github.com/anperezp/Ordinario_Jenkins.git'
       }
     }
