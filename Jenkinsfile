@@ -6,7 +6,6 @@ pipeline {
         sh '''if [ -d "Ordinario_Jenkins" ]; then
 rm -R Ordinario_Jenkins
 fi'''
-        sh 'docker rmi guiraofan'
       }
     }
     stage('Container') {
@@ -16,7 +15,7 @@ fi'''
     }
     stage('Image') {
       steps {
-        sh 'docker run -dit -p 8082:80 guiraofan'
+        sh 'docker run -dit -p 8082:80 --name  ordinario guiraofan'
       }
     }
   }
