@@ -3,7 +3,11 @@ pipeline {
   stages {
     stage('Conf Init') {
       steps {
-        sh 'rm -R Ordinario_Jenkins'
+        sh '''#!/bin/bash
+
+if [ -d "OrdinarioParadigmas" ]; then
+rm -R Ordinario_Jenkins
+fi'''
         sh 'docker stop $(docker ps -aq)'
         sh 'docker rm $(docker ps -aq)'
         sh 'docker rmi guiraofan'
