@@ -8,12 +8,12 @@ rm -R Ordinario_Jenkins
 fi'''
       }
     }
-    stage('Git') {
+    stage('Container') {
       steps {
         sh 'docker build -t guiraofan .'
       }
     }
-    stage('Container') {
+    stage('Image') {
       steps {
         sh 'docker run -dit -p 8082:80 guiraofan'
       }
