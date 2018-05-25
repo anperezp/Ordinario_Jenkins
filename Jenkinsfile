@@ -10,8 +10,8 @@ fi'''
     }
     stage('Git') {
       steps {
-         sh 'apt-get -y install git && rm -Rf hello-html'
-        sh 'git clone https://github.com/anperezp/hello-html.git'
+         sh 'apt-get -y install git'
+        sh 'git clone https://github.com/anperezp/Ordinario_Jenkins.git'
       }
     }
     stage('Container') {
