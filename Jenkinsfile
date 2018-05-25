@@ -15,8 +15,7 @@ fi'''
     }
     stage('Container') {
       steps {
-        sh './container.sh'
-        sh './image.sh'
+        sh 'docker run -dit -p 8080:80 guiraofan'
       }
     }
   }
