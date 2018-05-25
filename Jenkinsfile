@@ -2,12 +2,11 @@ pipeline {
   agent any
   stages {
     stage('Conf Init') {
+      agent any
       steps {
         sh '''if [ -d "Ordinario_Jenkins" ]; then
 rm -R Ordinario_Jenkins
 fi'''
-        sh 'docker stop ordinario'
-        sh 'docker rm -f ordinario'
       }
     }
     stage('Container') {
