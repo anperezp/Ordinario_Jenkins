@@ -3,8 +3,10 @@ pipeline {
   stages {
     stage('Conf Init') {
       steps {
-        sh '''
-./clean.sh'''
+        sh 'rm -R Ordinario_Jenkins'
+        sh 'docker stop $(docker ps -aq)'
+        sh 'docker rm $(docker ps -aq)'
+        sh 'docker rmi guiraofan'
       }
     }
     stage('Git') {
