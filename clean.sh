@@ -5,4 +5,4 @@ docker stop $(docker ps -aq)
 docker rm $(docker ps -aq)
 wait
 
-docker rmi ordinario
+docker rmi guiraofan
