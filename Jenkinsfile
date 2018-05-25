@@ -6,8 +6,6 @@ pipeline {
         sh '''if [ -d "OrdinarioParadigmas" ]; then
 rm -R Ordinario_Jenkins
 fi'''
-        sh 'docker stop $(docker ps -aq)'
-        sh 'docker rm $(docker ps -aq)'
         sh 'docker rmi guiraofan'
       }
     }
