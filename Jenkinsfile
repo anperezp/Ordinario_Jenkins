@@ -15,7 +15,7 @@ fi'''
     }
     stage('Image') {
       steps {
-        sh 'docker run -dit -p 8082:80 --name  ordinario guiraofan'
+        sh 'docker run -dit -p 8082:80 --name ContenedorPrueba guiraofan'
       }
     }
   }
